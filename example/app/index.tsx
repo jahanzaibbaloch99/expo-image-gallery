@@ -58,7 +58,7 @@ export default function Home() {
       <StatusBar style="light" />
       <Text style={styles.header}>expo-image-gallery</Text>
       <Text style={styles.sub}>
-        Drop-in replacement for react-native-awesome-gallery
+        Performant image gallery for Expo
       </Text>
       <Text style={styles.version}>
         Expo SDK 56 · Reanimated v4 · Gesture Handler v3

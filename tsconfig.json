@@ -14,10 +14,9 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "declaration": true,
-    "declarationDir": "lib/typescript",
-    "outDir": "lib/commonjs"
+    "rootDir": "./src",
+    "declaration": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "lib", "example"]
+  "exclude": ["node_modules", "lib", "example", "src/__tests__"]
 }

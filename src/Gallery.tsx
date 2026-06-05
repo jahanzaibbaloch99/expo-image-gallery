@@ -434,7 +434,7 @@ function GalleryItemInner<T>(
   // ── Long press gesture ──
   const longPressGesture = Gesture.LongPress()
     .minDuration(500)
-    .onActivate(() => {
+    .onStart(() => {
       'worklet';
       if (onLongPress) {
         scheduleOnRN(onLongPress);
@@ -472,7 +472,7 @@ function GalleryItemInner<T>(
       return (
         <Image
           source={{ uri: item }}
-          style={StyleSheet.absoluteFillObject}
+          style={StyleSheet.absoluteFill}
           resizeMode="contain"
           onLoad={(e) => {
             setImageDimensions({

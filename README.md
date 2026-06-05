@@ -6,7 +6,7 @@
 
 **Performant, native-feeling image gallery for Expo and React Native.**
 
-A drop-in replacement for [`react-native-awesome-gallery`](https://www.npmjs.com/package/react-native-awesome-gallery), fully rewritten for the modern Expo stack:
+A performant, fully-customizable image gallery built for the modern Expo stack:
 
 | Feature | This library |
 |---|---|
@@ -96,15 +96,6 @@ export default function App() {
 ```
 
 ---
-
-## Drop-in migration from react-native-awesome-gallery
-
-The API is intentionally identical. For most apps, changing only the import is enough:
-
-```diff
-- import Gallery from 'react-native-awesome-gallery';
-+ import Gallery from 'expo-image-gallery';
-```
 
 ---
 
