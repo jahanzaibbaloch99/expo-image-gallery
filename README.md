@@ -1,6 +1,6 @@
 # expo-image-gallery
 
-[![npm version](https://badge.fury.io/js/expo-image-gallery.svg)](https://badge.fury.io/js/expo-image-gallery)
+[![npm version](https://img.shields.io/npm/v/expo-image-gallery.svg)](https://www.npmjs.com/package/expo-image-gallery)
 [![CI](https://github.com/jahanzaibbaloch99/expo-image-gallery/actions/workflows/ci.yml/badge.svg)](https://github.com/jahanzaibbaloch99/expo-image-gallery/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
@@ -10,10 +10,11 @@ A performant, fully-customizable image gallery built for the modern Expo stack:
 
 | Feature | This library |
 |---|---|
-| Expo SDK | **56+** (React Native 0.85, React 19.2) |
-| Reanimated | **v4** (New Architecture only) |
-| Gesture Handler | **v3** (hook-based API) |
-| Architecture | New Architecture only |
+| Expo SDK | **50+** |
+| React Native | **0.73+** |
+| React | **18.2+** |
+| Reanimated | **v4** |
+| Gesture Handler | **2.14+** |
 | TypeScript | Full types, no `any` |
 
 ---
@@ -179,7 +180,7 @@ function renderItem({ item, setImageDimensions }: RenderItemInfo<Item>) {
     <Image
       source={{ uri: item.uri }}
       placeholder={{ blurhash: item.blurhash }}
-      style={StyleSheet.absoluteFillObject}
+      style={StyleSheet.absoluteFill}
       contentFit="contain"
       onLoad={(e) =>
         setImageDimensions({
@@ -202,12 +203,12 @@ export default function App() {
 
 | Package | Version |
 |---|---|
-| `expo` | `>=56.0.0` |
-| `react` | `>=19.0.0` |
-| `react-native` | `>=0.85.0` |
-| `react-native-gesture-handler` | `>=3.0.0` |
+| `expo` | `>=50.0.0` |
+| `react` | `>=18.2.0` |
+| `react-native` | `>=0.73.0` |
+| `react-native-gesture-handler` | `>=2.14.0` |
 | `react-native-reanimated` | `>=4.0.0` |
-| `react-native-worklets` | `>=1.0.0` |
+| `react-native-worklets` | `>=0.7.0` |
 
 ---
 
