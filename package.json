@@ -1,6 +1,6 @@
 {
   "name": "expo-image-gallery",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Performant, fully-customizable image gallery for Expo (SDK 50+). Powered by Reanimated v4 and Gesture Handler v3.",
   "keywords": [
     "expo",
@@ -79,9 +79,16 @@
   },
   "jest": {
     "preset": "react-native",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "setupFilesAfterFramework": ["./jest.setup.ts"],
+    "setupFilesAfterFramework": [
+      "./jest.setup.ts"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|react-native-reanimated|react-native-gesture-handler|react-native-worklets)/)"
     ]
