@@ -1,6 +1,6 @@
 {
   "name": "expo-image-gallery",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Performant, fully-customizable image gallery for Expo (SDK 56+). Powered by Reanimated v4 and Gesture Handler v3.",
   "keywords": [
     "expo",
