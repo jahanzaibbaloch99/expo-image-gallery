@@ -1,7 +1,7 @@
 {
   "name": "expo-image-gallery",
   "version": "1.0.2",
-  "description": "Performant, fully-customizable image gallery for Expo (SDK 56+). Powered by Reanimated v4 and Gesture Handler v3.",
+  "description": "Performant, fully-customizable image gallery for Expo (SDK 50+). Powered by Reanimated v4 and Gesture Handler v3.",
   "keywords": [
     "expo",
     "react-native",
@@ -11,7 +11,6 @@
     "pinch-to-zoom",
     "reanimated",
     "gesture-handler",
-    "expo-sdk-56",
     "ios",
     "android"
   ],
@@ -62,7 +61,7 @@
     "typescript": "^6.0.0"
   },
   "peerDependencies": {
-    "expo": ">=56.0.0",
+    "expo": ">=50.0.0",
     "react": ">=19.0.0",
     "react-native": ">=0.85.0",
     "react-native-gesture-handler": ">=3.0.0",
