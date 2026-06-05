@@ -1,0 +1,85 @@
+{
+  "name": "expo-image-gallery",
+  "version": "1.0.0",
+  "description": "Performant, fully-customizable image gallery for Expo (SDK 56+). Drop-in replacement for react-native-awesome-gallery. Powered by Reanimated v4 and Gesture Handler v3.",
+  "keywords": [
+    "expo",
+    "react-native",
+    "gallery",
+    "image-gallery",
+    "lightbox",
+    "pinch-to-zoom",
+    "reanimated",
+    "gesture-handler",
+    "expo-sdk-56",
+    "ios",
+    "android"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jahanzaibbaloch99/expo-image-gallery.git"
+  },
+  "license": "MIT",
+  "author": "Jahanzaib Ali <jhanzeb.ali99@gmail.com>",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/module/index.js",
+      "require": "./lib/commonjs/index.js",
+      "types": "./lib/typescript/src/index.d.ts"
+    }
+  },
+  "files": [
+    "lib/",
+    "src/",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "build": "bob build",
+    "prepare": "bob build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "jest",
+    "release": "release-it"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@types/react": "^19.0.0",
+    "@types/react-native": "^0.73.0",
+    "react": "19.2.0",
+    "react-native": "0.85.0",
+    "react-native-builder-bob": "^0.30.0",
+    "typescript": "^6.0.0"
+  },
+  "peerDependencies": {
+    "expo": ">=56.0.0",
+    "react": ">=19.0.0",
+    "react-native": ">=0.85.0",
+    "react-native-gesture-handler": ">=3.0.0",
+    "react-native-reanimated": ">=4.0.0",
+    "react-native-worklets": ">=1.0.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "setupFilesAfterFramework": ["./jest.setup.ts"],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|react-native-reanimated|react-native-gesture-handler|react-native-worklets)/)"
+    ]
+  }
+}

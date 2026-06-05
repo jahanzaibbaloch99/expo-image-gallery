@@ -1,0 +1,11 @@
+node_modules/
+lib/
+coverage/
+*.log
+.DS_Store
+.env
+.env.local
+example/node_modules/
+example/.expo/
+example/ios/
+example/android/
